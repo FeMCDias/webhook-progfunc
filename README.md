@@ -81,10 +81,17 @@ pip install -r requirements.txt
 
 ## 4 · Como Rodar
 
+### 0 · Clonar o repositório
+
+```bash
+git clone https://github.com/FeMCDias/webhook-progfunc.git
+cd webhook-progfunc
+```
+
 ### 4.1 Servidor F\#
 
 ```bash
-cd project-webhook/src
+cd src
 dotnet clean            # limpa artefatos anteriores
 dotnet restore          # restaura pacotes NuGet
 dotnet run              # escuta em http://127.0.0.1:5000/webhook
@@ -129,7 +136,7 @@ Saída esperada:
 | --------------------- | ------------------------------------------------------------------------------------------------- |
 | **Persistência**      | Substituir `Storage.fs` por um repositório PostgreSQL/Mongo para idempotência pós‑reinício.       |
 | **HTTPS**             | Configurar Kestrel com certificado de desenvolvimento (`UseHttps`) para criptografia em trânsito. |
-| **Retry / Filas**     | Enfileirar confirmações/cancelamentos em RabbitMQ ou AWS SQS para resiliência.                    |                                    
+| **Retry / Filas**     | Enfileirar confirmações/cancelamentos em RabbitMQ ou AWS SQS para resiliência.                    |
 
 ---
 
