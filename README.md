@@ -69,7 +69,15 @@ Arquivos F# são declarados em ordem de dependência no `.fsproj`, garantindo c
 | **Python 3.8+**    | —                      | Rodar `test_webhook.py`.          |
 | **Pacotes Python** | ver `requirements.txt` | `fastapi`, `uvicorn`, `requests`. |
 
-Instalação rápida dos pacotes Python:
+### 3.1 · Clonar o repositório
+
+```bash
+git clone https://github.com/FeMCDias/webhook-progfunc.git
+cd webhook-progfunc
+```
+
+
+### 3.2 Instalação rápida dos pacotes Python:
 
 ```bash
 python -m venv .venv
@@ -80,13 +88,6 @@ pip install -r requirements.txt
 ---
 
 ## 4 · Como Rodar
-
-### 0 · Clonar o repositório
-
-```bash
-git clone https://github.com/FeMCDias/webhook-progfunc.git
-cd webhook-progfunc
-```
 
 ### 4.1 Servidor F\#
 
